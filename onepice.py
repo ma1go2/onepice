@@ -80,7 +80,7 @@ def add_node(name, tier, parent=None, x_offset=0, depth=0):
         color=color,
         x=x_offset,
         y=y_pos,
-        fixed={"x": False, "y": True},
+        fixed={"x": False, "y": False},
         physics=False
     )
 
@@ -138,7 +138,7 @@ if st.button("🔍 조합 트리 보기"):
                 }
             },
             "physics": {
-                "enabled": True
+                "enabled": False
             },
             "interaction": {
                 "hover": True,
